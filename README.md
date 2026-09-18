@@ -1,81 +1,90 @@
-# Smart Expense Tracker
+# Smart Expense Tracker — Week 2
 
-## Week 1 — Project Planning and Requirements Analysis
+## Design Documentation & Architecture Planning
 
-### 📌 Project Overview
+This repository contains the Week 2 design and architecture documentation for the **Smart Expense Tracker** project.
 
-Smart Expense Tracker is a planned web-based personal finance management application designed to help users record, organize, and monitor their income and expenses.
-
-The main purpose of this project is to provide users with a simple way to understand their spending habits, manage monthly budgets, and keep track of their overall financial activity.
-
-This repository currently contains the **Week 1 project planning and requirements analysis**. The actual application development will be carried out in the upcoming project phases.
+The main purpose of Week 2 is to convert the requirements identified during Week 1 into a clear technical design. The documentation explains how the proposed application will be structured, how its components will communicate with each other, how data will flow through the system, and why specific technologies have been selected.
 
 ---
 
-## 🎯 Project Objectives
+## 📌 Project Overview
 
-The main objectives of the Smart Expense Tracker are:
+**Smart Expense Tracker** is a web-based personal finance management application designed to help users manage their daily income and expenses.
 
-* To provide an easy way to record income and expenses.
-* To organize transactions using different categories.
-* To help users set and monitor monthly budgets.
-* To provide a dashboard showing important financial information.
-* To allow users to search and filter their transactions.
-* To generate simple financial reports and summaries.
-* To provide a responsive and user-friendly interface.
-* To protect user financial information through appropriate security measures.
+The application is planned to provide features such as:
 
----
+- User registration and login
+- Adding and managing income and expenses
+- Expense categorization
+- Budget management
+- Dashboard and financial summaries
+- Expense reports
+- Notifications and reminders
+- Secure user data management
 
-## ✨ Planned Features
-
-The following features are planned for the complete application:
-
-### User Management
-
-* User registration
-* User login and logout
-* User profile management
-
-### Income & Expense Management
-
-* Add income
-* Add expenses
-* Edit transactions
-* Delete transactions
-* View transaction history
-
-### Categories
-
-* Create and manage transaction categories
-* Categorize income and expenses
-
-### Budget Management
-
-* Set monthly budgets
-* Monitor spending against the budget
-* Display remaining budget
-* Budget alerts and notifications
-
-### Dashboard
-
-* Total income
-* Total expenses
-* Current balance
-* Monthly budget information
-* Recent transactions
-* Financial summaries
-
-### Search & Reports
-
-* Search transactions
-* Filter transactions by category and date
-* Monthly expense summaries
-* Category-wise expense reports
-* Income vs. expense analysis
+The Week 2 documentation focuses on the technical architecture required to support these features.
 
 ---
 
-## 📋 Week 1 Deliverables
+## 🎯 Week 2 Objectives
 
-The focus of Week 1 is **Project Planning and Requirements A**
+The main objectives of this week are:
+
+1. Define the overall system architecture.
+2. Identify major system components and modules.
+3. Define frontend, backend, and database responsibilities.
+4. Describe data flow between different components.
+5. Design the major database entities.
+6. Define important API interfaces.
+7. Select a suitable technology stack.
+8. Document security and reliability considerations.
+9. Plan the deployment structure.
+10. Identify possible future scalability improvements.
+
+---
+
+## 🏗️ System Architecture
+
+The proposed application follows a **layered client-server architecture**.
+
+```text
+                    ┌──────────────────────┐
+                    │        User          │
+                    │   Web Browser       │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │      Frontend        │
+                    │ HTML / CSS / JS      │
+                    │      React (Optional)│
+                    └──────────┬───────────┘
+                               │
+                         HTTP / HTTPS
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    Backend API       │
+                    │   Node.js + Express  │
+                    └──────────┬───────────┘
+                               │
+              ┌────────────────┼────────────────┐
+              │                │                │
+              ▼                ▼                ▼
+       ┌────────────┐   ┌─────────────┐  ┌──────────────┐
+       │   Auth &   │   │   Business  │  │  Reporting & │
+       │ Validation │   │    Logic    │  │ Notifications│
+       └────────────┘   └──────┬──────┘  └──────────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    Data Access       │
+                    │       Layer          │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │     PostgreSQL       │
+                    │      Database        │
+                    └──────────────────────┘
