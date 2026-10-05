@@ -179,3 +179,102 @@ Data Access Layer
   |
   v
 PostgreSQL Database
+
+# 🧪 Week 4 — Software Testing & Quality Assurance Plan
+
+## Overview
+
+Week 4 of the **Smart Expense Tracker** project focuses on Software Testing and Quality Assurance (QA).
+
+The objective of this phase is to develop a structured testing plan to verify the functionality, performance, security, usability, reliability, and overall quality of the proposed application.
+
+This phase builds upon the project requirements defined in Week 1, the system architecture designed in Week 2, and the feature prototype documented in Week 3.
+
+---
+
+## 🎯 Week 4 Objectives
+
+The main objectives of Week 4 are:
+
+1. Define a comprehensive software testing strategy.
+2. Identify different levels and types of testing.
+3. Prepare functional and non-functional testing approaches.
+4. Develop practical test cases for important features.
+5. Define API and database testing strategies.
+6. Plan performance testing and quality benchmarks.
+7. Define security testing scenarios.
+8. Plan usability and compatibility testing.
+9. Define defect reporting and management procedures.
+10. Establish QA metrics and release criteria.
+
+---
+
+## 🔍 Testing Scope
+
+The testing plan covers the following areas:
+
+- User registration and login
+- Authentication and authorization
+- Income and expense management
+- Add & Manage Expense Transaction
+- Transaction categorization
+- Budget management
+- Dashboard and financial summaries
+- Expense reports
+- API endpoints
+- Database operations
+- Error handling
+- Security
+- Performance
+- Usability
+- Browser and device compatibility
+
+---
+
+## 🧪 Testing Strategy
+
+The project follows a layered testing strategy.
+
+### 1. Unit Testing
+
+Unit testing will verify individual functions and modules independently.
+
+Examples:
+
+- Amount validation
+- Date validation
+- Category validation
+- Transaction calculations
+- Utility functions
+
+### 2. Integration Testing
+
+Integration testing will verify communication between different application components.
+
+Examples:
+
+- Frontend → Backend API
+- Backend → Database
+- Authentication → Protected APIs
+- Transaction service → Database
+
+### 3. System Testing
+
+System testing will validate complete user workflows.
+
+Example:
+
+```text
+Login
+  ↓
+Open Expense Page
+  ↓
+Enter Expense
+  ↓
+Submit Transaction
+  ↓
+Validate Data
+  ↓
+Save to Database
+  ↓
+Display Updated Transaction
