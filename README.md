@@ -280,3 +280,145 @@ Save to Database
 Display Updated Transaction
  
  made by:- Bittu
+
+ ---
+
+# Smart Expense Tracker — Week 5
+
+## Code Debugging and Refactoring Analysis
+
+### 1. Overview
+
+Week 5 focuses on simulating the software maintenance phase of the Smart Expense Tracker project. The objective is to identify potential coding issues, analyze their impact, and recommend debugging and refactoring techniques to improve code quality, performance, security, and maintainability.
+
+This report uses a hypothetical codebase to demonstrate potential software issues and their proposed solutions. The issues described have not been confirmed in an actual application.
+
+### 2. Objectives
+
+- Identify common software coding issues.
+- Analyze potential bugs and performance problems.
+- Develop a systematic debugging plan.
+- Recommend code refactoring techniques.
+- Improve code readability and maintainability.
+- Identify security risks in transaction management.
+- Propose testing methods to prevent regression issues.
+
+### 3. Common Coding Issues
+
+The report examines the following potential issues:
+
+- Duplicate input validation.
+- Missing transaction ownership checks.
+- Inefficient dashboard calculations.
+- Large and complex route handlers.
+- Unsafe SQL query construction.
+- Inconsistent monetary calculations.
+- Poor error handling and logging.
+- Unbounded database queries.
+- Repeated database calls.
+- Date and timezone handling errors.
+- Insufficient automated testing.
+- Redundant or unclear code.
+
+### 4. Debugging Strategy
+
+The proposed debugging workflow includes:
+
+1. Establish a safe development environment.
+2. Reproduce the suspected issue.
+3. Record expected and actual results.
+4. Inspect logs and relevant code.
+5. Identify the root cause.
+6. Create a regression test.
+7. Apply a focused correction.
+8. Run automated tests.
+9. Compare performance before and after changes.
+10. Document the fix and review the changes.
+
+### 5. Refactoring Techniques
+
+The report recommends:
+
+- Modularization of routes, controllers, services, and database operations.
+- Simplification of complex conditional statements.
+- Extraction of repeated logic into reusable functions.
+- Optimization of algorithms and database queries.
+- Consistent input validation.
+- Centralized error handling.
+- Consistent monetary calculations.
+- Incremental refactoring supported by automated tests.
+
+### 6. Before-and-After Code Analysis
+
+Conceptual pseudocode demonstrates how to improve dashboard calculations, transaction ownership verification, and request processing.
+
+The examples compare potentially inefficient or unsafe approaches with more modular and secure alternatives.
+
+### 7. Testing and Verification
+
+The proposed testing strategy includes:
+
+- Unit testing.
+- Integration testing.
+- API and system testing.
+- Regression testing.
+- Performance testing.
+- Security testing.
+
+Sample scenarios cover valid and invalid transactions, unauthorized access, dashboard calculations, database failures, and date-range boundaries.
+
+### 8. Performance and Quality Metrics
+
+Proposed initial benchmarks include:
+
+| Metric | Proposed Target |
+|---|---|
+| Dashboard response time | Under 3 seconds under defined normal load |
+| Common transaction API response time | Under 2 seconds under defined normal load |
+| API error rate | Below 1% under defined normal load |
+| Financial calculation correctness | 100% match against reference test data |
+| Critical security defects | Zero unresolved critical findings before release |
+
+These are proposed targets, not measured results. Actual performance must be verified in a test environment.
+
+### 9. Risk Management
+
+Potential risks include introducing regressions during refactoring, overlooking security vulnerabilities, optimizing without sufficient evidence, and changing financial calculation behaviour.
+
+Mitigation strategies include automated regression tests, code reviews, controlled changes, repeatable performance measurements, and prioritization of security and financial correctness.
+
+### 10. Week 5 Work Plan
+
+The proposed 32-hour schedule includes:
+
+- Reviewing previous project documentation.
+- Analyzing potential code issues.
+- Preparing a diagnostic report.
+- Planning debugging activities.
+- Developing regression test scenarios.
+- Documenting refactoring techniques.
+- Defining performance and security checks.
+- Reviewing and finalizing the report.
+
+### 11. Deliverable
+
+The Week 5 deliverable is a technical Word document containing the code debugging and refactoring analysis, potential issues, proposed solutions, debugging workflow, conceptual code comparisons, regression test scenarios, performance benchmarks, and maintenance schedule.
+
+**Report:** `docs/Smart_Expense_Tracker_Week5_Code_Debugging_Refactoring_Report.docx`
+
+### 12. Project Progress
+
+- Week 1: Project Planning and Requirements Analysis
+- Week 2: Design Documentation and Architecture Planning
+- Week 3: Feature Development and Code Prototype Documentation
+- Week 4: Software Testing and Quality Assurance Plan
+- Week 5: Code Debugging and Refactoring Analysis
+
+### 13. Future Development
+
+Future work may include implementing the proposed improvements, creating automated tests, measuring application performance, reviewing security controls, and validating the application against its original requirements.
+
+---
+
+**Project:** Smart Expense Tracker  
+**Repository:** smart_expanse_tracker
