@@ -1,3 +1,7 @@
+ # Smart Expense Tracker
+
+## Internship Project Documentation — Weeks 1–5
+  
 # Smart Expense Tracker — Week 2
 
 ## Design Documentation & Architecture Planning
